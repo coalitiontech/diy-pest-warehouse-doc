@@ -1,0 +1,12 @@
+site_name: Project - CT
+nav:
+  - General: index.md
+  - Home: home.md
+  - Category: category.md
+  - Product: product.md
+  - Static: static.md
+  - Mega Menu: menu.md
+  - Other: other.md
+theme: readthedocs
+extra_css:
+  - style.css
