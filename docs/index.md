@@ -1,9 +1,9 @@
-# Welcome to PROJECT theme by Coalition Technologies documentation
+# Welcome to DIY Pest Warehouse theme by Coalition Technologies documentation
 
 ## Developers info
 
-* Base theme: Cornerstone 6.14.0
-* Node: 18.15.0
+* Base theme: Annie's Garden 1.2.1
+* Node: 20.16.0
 * Command: stencil start
 
 ## Project pages designed
