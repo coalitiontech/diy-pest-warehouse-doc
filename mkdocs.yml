@@ -1,11 +1,12 @@
 site_name: DIY Pest Warehouse - CT
 nav:
   - General: index.md
+  - Header: header.md
   - Home: home.md
   - Category: category.md
   - Product: product.md
   - Static: static.md
-  - Mega Menu: menu.md
+  - Footer: footer.md
   - Other: other.md
 theme: readthedocs
 extra_css:
