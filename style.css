@@ -34,3 +34,7 @@
 .wy-menu-vertical li.current ul {
     background-color: var(--var-light);
 }
+
+.rst-content .section ol li,.rst-content .section ul li{
+    margin-bottom: 18px;
+}
