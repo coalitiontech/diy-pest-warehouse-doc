@@ -121,6 +121,8 @@ Copy the following snippet:
 
 Replace the content and paste it in the following section of the metafield app:
 
+Pending
+
 <!-- ![category-faq-metafield.png](img/category-faq-metafield.png) -->
 
 ## Copy
