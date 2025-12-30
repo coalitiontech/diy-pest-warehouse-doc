@@ -55,11 +55,25 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Category</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#banner">Banner</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#category-title">Category Title:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#category-description">Category Description:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#category-image">Category Image:</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#title-and-description">Title and Description</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#filters">Filters</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#products">Products</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#copy">Copy</a>
     </li>
     </ul>
                 </li>
@@ -105,6 +119,25 @@
               
                 <h1 id="category-page">Category Page</h1>
 <p>The category page lists all the products in the category.</p>
+<h2 id="banner">Banner</h2>
+<p><img alt="category-banner.png" src="../img/category-banner.png" /></p>
+<p>Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products/categories">category section</a> on the bigcommerce dashboard, and select the category to edit:</p>
+<p><img alt="category-edit.png" src="../img/category-edit.png" /></p>
+<h3 id="category-title">Category Title:</h3>
+<p>Display name of the category is the category title, change it by editing following marked area:</p>
+<p><img alt="category-edit-title.png" src="../img/category-edit-title.png" /></p>
+<h3 id="category-description">Category Description:</h3>
+<p>Click the below marked area to open the source code area of the section:</p>
+<p><img alt="category-edit-desc-source.png" src="../img/category-edit-desc-source.png" /></p>
+<p>Everything <strong>before</strong> the (<code>&lt;!-- split --&gt;</code>) seperator counts as the description of the page, we had to do that because of the migration purposes:</p>
+<p><img alt="category-edit-desc-source-split.png" src="../img/category-edit-desc-source-split.png" /></p>
+<p>To edit the existing category description, directly edit the part <strong>before</strong> seperator and please make sure the split seperator is as shown in the image and click save buttons.</p>
+<p>To add description in the category, then add a description first and end it by adding (<code>&lt;!-- split --&gt;</code>), and that will add the description. If  there is already content in it, still first add the description followed by the split seperator and then keep the remaining content as is and click save buttons.</p>
+<h3 id="category-image">Category Image:</h3>
+<p>Scroll of the category image section:</p>
+<p><img alt="category-edit-image.png" src="../img/category-edit-image.png" /></p>
+<p>Click the three dots to change or delete category banner image.</p>
+<p>Save to publish changes.</p>
 <h2 id="title-and-description">Title and Description</h2>
 <p>It contains the category name and description.</p>
 <p>We used the built-in BigCommerce category settings for this.</p>
@@ -116,6 +149,88 @@
 <p>For more information about the filters, see the <a href="https://support.bigcommerce.com/s/article/Product-Filtering-Settings" target="_blank">BigCommerce documentation</a>.</p>
 <h2 id="products">Products</h2>
 <p>It lists all the products in the category.</p>
+<h2 id="faq">FAQ</h2>
+<p><img alt="category-faq.png" src="../img/category-faq.png" /></p>
+<p>Copy the following snippet:</p>
+<pre><code class="language-html">&lt;div class=&quot;custom-accordion&quot;&gt;
+    &lt;h3&gt;How do I know if I have a bed bug infestation?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-inner&quot;&gt;
+        &lt;div&gt;
+            &lt;p&gt;Bed bug infestations can be hard to spot early. Common signs include waking up with red, itchy bites, often in straight lines or clusters. Look for reddish-brown stains on mattresses or bedding, which may result from crushed bugs or droppings. You might also notice tiny black spots, bed bug feces, or shed skins near mattress seams, box springs, or bed frames. Check these areas with a flashlight, as bed bugs hide in crevices and cracks. Catching infestations early makes them easier to treat effectively.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;custom-accordion&quot;&gt;
+    &lt;h3&gt;What are the best products to treat a bed bug infestation?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-inner&quot;&gt;
+        &lt;div&gt;
+            &lt;p&gt;The most effective solution combines multiple products. Bed bug sprays with pyrethrins or pyrethroids kill bed bugs instantly on visible surfaces. Bed bug insecticide dusts are ideal for hidden spaces like wall voids or furniture cracks, providing long-term results. Insect growth regulators (IGRs) help prevent the bugs from reproducing, breaking the infestation cycle. Mattress encasements are also valuable—they trap bed bugs and protect against future infestations. To maximize effectiveness, follow product instructions precisely.&lt;/p&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;custom-accordion&quot;&gt;
+    &lt;h3&gt;Are bed bug treatments safe for pets and children?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-inner&quot;&gt;
+        &lt;div&gt;
+            &lt;p&gt;Bed bug treatments can be safe for households if applied properly. Keep pets and children away from treated areas until the product has dried completely. Ensure proper ventilation during and after application. For added safety, botanical or natural-based bed bug killer products are a good alternative though they may not be as effective. Always read product labels carefully and follow guidelines to avoid risks. If unsure about how to use bed bug insecticides, consult a professional pest control expert.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;custom-accordion&quot;&gt;
+    &lt;h3&gt;How long does it take for bed bug treatments to work?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-inner&quot;&gt;
+        &lt;div&gt;
+            &lt;p&gt;Treatment duration depends on the severity of the infestation and the thoroughness of your approach. Some sprays kill bed bugs immediately, while others require follow-ups. Expect to repeat treatments every 10–14 days to catch newly hatched bugs. Complete eradication often takes several weeks with consistent application.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;custom-accordion&quot;&gt;
+    &lt;h3&gt;How do I prevent a bed bug infestation in my home?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-inner&quot;&gt;
+        &lt;div&gt;
+            &lt;p&gt;Prevention is key to avoiding infestations. Regularly inspect your bedding, especially after traveling. When staying in hotels, check the room for signs of bed bugs before unpacking, and store luggage off the floor. Use mattress encasements and vacuum frequently, focusing on furniture seams and cracks. Avoid bringing in untreated second-hand furniture. With consistent habits and knowledge of how to effectively use bed bug insecticides, you can significantly reduce the risk of infestations.&lt;/p&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Replace the content and paste it in the following section of the metafield app:</p>
+<!-- ![category-faq-metafield.png](img/category-faq-metafield.png) -->
+
+<h2 id="copy">Copy</h2>
+<p><img alt="category-copy.png" src="../img/category-copy.png" /></p>
+<p>Copy the following snippet:</p>
+<pre><code class="language-html">&lt;div class=&quot;info-row&quot;&gt;
+    &lt;div class=&quot;info-flex-first-column&quot;&gt;
+        &lt;h2&gt;Professional-Grade Bed Bug Insecticides&lt;/h2&gt;
+        &lt;p&gt;When untreated, &lt;a href=&quot;https://www.diypestwarehouse.com/blogs/our-blog/your-ultimate-guide-on-how-to-get-rid-of-bed-bugs-fast&quot;&gt;bed bug infestations&lt;/a&gt; can be costly and difficult to eradicate. It's important that you start bed bug control as soon as possible, or else the situation will only worsen. The good news is DIY Pest Warehouse brings you everything you need to combat a bed bug infestation. These include professional-grade insecticide concentrates, &lt;a href=&quot;https://www.diypestwarehouse.com/collections/bed-bug-aerosol-sprays&quot;&gt;aerosol bed bug sprays&lt;/a&gt;, insect growth regulators, and granules. Find the perfect bed bug killer products for you today.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;info-flex-second-column&quot;&gt;
+        &lt;h2&gt;DIY Solutions From Industry Experts&lt;/h2&gt;
+        &lt;p&gt;Bed bugs are hardy pests that can be difficult to kill, but &lt;a href=&quot;https://www.diypestwarehouse.com/&quot;&gt;DIY Pest Warehouse&lt;/a&gt; brings bed bug control within your reach with the right combination of products. Our professional-grade bed bug eradication products are cheaper than an exterminator. Save up to 80% compared with exterminator costs with proven bed bug insecticides from the same trusted brands that professional exterminators use. Don't let bed bugs take over your home.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pests-stop-info&quot;&gt;
+    &lt;h2&gt;Stop Bugs Bugging You&lt;/h2&gt;
+    &lt;p&gt;Shop all your &lt;a href=&quot;https://www.diypestwarehouse.com/collections&quot;&gt;pest control products&lt;/a&gt; at DIY Pest Warehouse. Our bed bug insecticides offer complete coverage for your home, office, and car to help you stop bugs from bugging you. Order now and enjoy fast, free shipping in the U.S. Need help? &lt;a href=&quot;https://www.diypestwarehouse.com/pages/contact-us&quot;&gt;Contact us&lt;/a&gt; now.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>and paste it <strong>after</strong> the (<code>&lt;!-- split --&gt;</code>) seperator as previously was used for description in category banner <a href="#category-description">here</a>. Incase if there is no split seperator then you can add one before the pasted snippet code.</p>
+<p><img alt="category-copy-source.png" src="../img/category-copy-source.png" /></p>
+<p>Change the content of the copied snippet code (please refer to the image displayed <a href="#copy">here</a>) and click the save buttons.</p>
               
             </div>
           </div><footer>
