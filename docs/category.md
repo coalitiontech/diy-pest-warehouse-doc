@@ -8,13 +8,13 @@ Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products/
 
 ![category-edit.png](img/category-edit.png)
 
-### Category Title:
+### Category Title
 
 Display name of the category is the category title, change it by editing following marked area:
 
 ![category-edit-title.png](img/category-edit-title.png)
 
-### Category Description:
+### Category Description
 
 Click the below marked area to open the source code area of the section:
 
@@ -28,7 +28,7 @@ To edit the existing category description, directly edit the part <strong>before
 
 To add description in the category, then add a description first and end it by adding (```<!-- split -->```), and that will add the description. If  there is already content in it, still first add the description followed by the split seperator and then keep the remaining content as is and click save buttons.
 
-### Category Image:
+### Category Image
 
 Scroll of the category image section:
 
