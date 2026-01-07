@@ -61,9 +61,19 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#short-description">Short Description</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#product-tabs">Product tabs</a>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-product-tabs">Custom Product tabs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview-tab">Overview Tab</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#related-items">Related Items</a>
+    <li class="toctree-l3"><a class="reference internal" href="#product-data-sheet-tab">Product Data Sheet Tab</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#product-specific-table-tab">Product Specific Table Tab</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#related-items-or-you-may-also-like">Related Items or You May Also Like</a>
     </li>
     </ul>
                 </li>
@@ -110,12 +120,69 @@
 <h2 id="short-description">Short Description</h2>
 <p>The short description is a brief description of the product. It should be a short paragraph that describes the product in a few sentences. The short description should be displayed at the top of the product page.
 It is not mandatory, so not all the products will have it.</p>
-<h2 id="product-tabs">Product tabs</h2>
-<p>The product tabs are used to display additional information about the product. The tabs include the description, specifications, shipping info, and FAQ. 
-The content comes from the product description, following a specific format, like the one already set in some of the current products.
-The format should be as follows:
-The shipping info comes from the 'Availability text' field in the product settings.</p>
-<h2 id="related-items">Related Items</h2>
+<h2 id="custom-product-tabs">Custom Product tabs</h2>
+<p><img alt="pdp-custom-tab.png" src="../img/pdp-custom-tab.png" /></p>
+<h3 id="overview-tab">Overview Tab</h3>
+<p><img alt="pdp-custom-tab-overview.png" src="../img/pdp-custom-tab-overview.png" /></p>
+<p>Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products">product section</a> on the bigcommerce dashboard, and select the product to edit:</p>
+<p><img alt="pdp-custom-tab-bc-view.png" src="../img/pdp-custom-tab-bc-view.png" /></p>
+<p>Click the Description tab in product page:</p>
+<p><img alt="pdp-custom-tab-bc-description-tab.png" src="../img/pdp-custom-tab-bc-description-tab.png" /></p>
+<p>Content added on the following section will be displayed under Overview tab:</p>
+<p><img alt="pdp-custom-tab-bc-description.png" src="../img/pdp-custom-tab-bc-description.png" /></p>
+<h3 id="product-data-sheet-tab">Product Data Sheet Tab</h3>
+<p><img alt="pdp-custom-tab-data-sheet.png" src="../img/pdp-custom-tab-data-sheet.png" /></p>
+<p>Coming soon...</p>
+<h3 id="product-specific-table-tab">Product Specific Table Tab</h3>
+<p><img alt="pdp-custom-tab-specific-table.png" src="../img/pdp-custom-tab-specific-table.png" /></p>
+<p>Copy the following code snippet and replace the content between the start and end tag:</p>
+<pre><code class="language-html">&lt;div class=&quot;halo-custom-tab&quot; data-custom-tab=&quot;Product Specifications Table&quot;&gt;
+
+    &lt;!-- Remove below content and replace it with your content - Starts here --&gt;
+    &lt;p&gt;Damus de ullamcorper neque. Sed vitae mi a mi pretium aliquet an sed helito. Pellentesque nulla eros accumsan quis justo at tincidunto, de drostique des commodo pharetras retium.&lt;/p&gt;
+    &lt;div class=&quot;scrollable-wrapper&quot;&gt;
+        &lt;table&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Comodous&lt;/td&gt;
+                    &lt;td&gt;Comodous in tempor ullamcorper miaculis&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Posuere&lt;/td&gt;
+                    &lt;td&gt;Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Divamus&lt;/td&gt;
+                    &lt;td&gt;Pellentesque vitae neque mollis durna mattis loreto&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Molestie&lt;/td&gt;
+                    &lt;td&gt;Donec pretium egestas sapien et mollis&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Milancelos&lt;/td&gt;
+                    &lt;td&gt;Proin molestie egestas morci de suscipit risus posuere lorem&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;tb-title&quot;&gt;Cosmopolis&lt;/td&gt;
+                    &lt;td&gt;Pellentesque diam dolor, elementum etos lobortis des mollis&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;!-- End here --&gt;
+&lt;/div&gt;
+</code></pre>
+<p>To change tab title replace (<code>Product Specifications Table</code>) in (<code>data-custom-tab="Product Specifications Table"</code>) with your desired title in above copied snippet code.</p>
+<p><img alt="pdp-custom-tab-specific-table-bc.png" src="../img/pdp-custom-tab-specific-table-bc.png" /></p>
+<p>Navigate back to the description tab as previously did on <a href="#overview-tab">Overview tab</a>, </p>
+<p><img alt="pdp-custom-tab-specific-table-bc-paste.png" src="../img/pdp-custom-tab-specific-table-bc-paste.png" /></p>
+<p>Paste the code right after the description added for the overview tab. If there is no content paste it directly in the empty space.</p>
+<p>Click Ok and Save to publish.</p>
+<h2 id="faq">FAQ</h2>
+<p><img alt="pdp-faq.png" src="../img/pdp-faq.png" /></p>
+<p>Coming Soon...</p>
+<h2 id="related-items-or-you-may-also-like">Related Items or You May Also Like</h2>
 <p>The related items section displays products that are related to the current product. These are usually automatically picked by BigCommerce or can be set manually in the product settings.
 Please refer to the BigCommerce <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US#related" target="_blank">documentation</a> for more details.</p>
               
