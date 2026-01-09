@@ -33,7 +33,7 @@ The Icon With Text section is made using a custom widget with an HTML block from
 5. Click on the `Save` (to preview the changes) Or `Publish` (to make them live) button.
 ![save-publish.png](img/save-publish.png)
 
-## Shop by Pest Types
+## Shop by Pest Types Section
 ![home-shop-by-category-1.png](img/home-shop-by-category-1.png)
 
 1. The Shop by Pest Types section is made using a custom widget called `Shop by Category`. You can change the content in the [Page Builder](index.md/#page-builder).
@@ -73,7 +73,7 @@ To mark a product as Featured, simply go to the product listing via Products->Vi
 3. Click on the `Save` (to preview the changes) Or `Publish` (to make them live) button.
 ![save-publish.png](img/save-publish.png)
 
-## Our Products
+## Our Products Section
 ![our-products-1.png](img/our-products-1.png)
 
 1. The Shop by Category section is made using a custom widget called `Two Col Banner`. You can change the content in the [Page Builder](index.md/#page-builder).
@@ -91,7 +91,7 @@ To mark a product as Featured, simply go to the product listing via Products->Vi
 5. Click on the `Save` (to preview the changes) Or `Publish` (to make them live) button.
 ![save-publish.png](img/save-publish.png)
 
-## Pests by Season
+## Pests by Season Section
 ![pests-by-season-1.png](img/pests-by-season-1.png)
 
 1. The Shop by Category section is made using a custom widget called `Four Col Banner`. You can change the content in the [Page Builder](index.md/#page-builder).
@@ -109,7 +109,7 @@ To mark a product as Featured, simply go to the product listing via Products->Vi
 5. Click on the `Save` (to preview the changes) Or `Publish` (to make them live) button.
 ![save-publish.png](img/save-publish.png)
 
-## Our Blog
+## Our Blog Section
 ![our-blog-1.png](img/our-blog-1.png)
 
 The Our Blog sections developed by Halothemes. For further details and guidance, please review the <a href="https://themes.halothemes.com/documents/bigcommerce-annie-garden/#home_recent_posts" target="_blank">Halothemes documentation</a>.
