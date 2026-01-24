@@ -94,7 +94,106 @@ Click Ok and Save to publish.
 ## FAQ
 ![pdp-faq.png](img/pdp-faq.png)
 
-Coming Soon...
+Copy the following snippet:
+
+```html
+<div class="custom-accordion cst-faq-QA-flex">
+        <div class="custom-QA-text">Q</div>
+        <h3>How long does it take for Onslaught FastCap to work?</h3>
+</div>
+<div class="panel cst-faq-QA-flex">
+        <div class="panel-inner" style="padding:18px">
+                <div class="custom-QA-text">A</div>
+                <div>
+<p>The speed of FastCap insecticide efficacy depends on the pest you&rsquo;re attempting to exterminate. Depending on the type of insect, its health, and its lifecycle stage, FastCap may take anywhere from several minutes to several hours to take effect. For large pest infestations, it's best to wait at least one week to see the full results.</p>
+                </div>
+        </div>
+</div>
+<div class="custom-accordion cst-faq-QA-flex">
+        <div class="custom-QA-text">Q</div>
+        <h3>What is the mixing ratio for Onslaught FastCap?</h3>
+</div>
+<div class="panel cst-faq-QA-flex">
+        <div class="panel-inner" style="padding:18px">
+                <div class="custom-QA-text">A</div>
+                <div>
+<p>For moderate or low infestations, mix half an ounce of Onslaught FastCap spider and scorpion insecticide with one gallon of water. For heavy infestations, mix one full ounce with one gallon of water. The final mixture should be enough to cover 1,000 square feet.</p>
+                </div>
+        </div>
+
+</div>
+<div class="custom-accordion cst-faq-QA-flex">
+        <div class="custom-QA-text">Q</div>
+        <h3>How long does the residual effect of FastCap pesticide last indoors and outdoors?</h3>
+</div>
+<div class="panel cst-faq-QA-flex">
+        <div class="panel-inner" style="padding:18px">
+                <div class="custom-QA-text">A</div>
+                <div>
+<p>Residual control from Onslaught FastCap works as a surface or <a href="https://www.diypestwarehouse.com/collections/ant-sprays">spot treatment</a>. You can expect a single treatment to provide residual control between 30 and 90 days. Do not spray within 24 hours of expected rainfall, as the product will not be effective.</p>
+                </div>
+        </div>
+</div>
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What pests does Bora-Care treat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bora-Care spray can control a variety of termites and beetles, carpenter ants, fungi, and algae. This product targets pests that harm wood products, including home-building materials, furniture, and flooring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the mixing ratio for Bora-Care termiticide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The mixing ratio is dependent on your use case and infestation levels. Please refer to the label to learn more about which ratio is appropriate for your needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Bora-Care last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This product is designed to last for the lifetime of the wood. However, you may need to apply multiple treatments depending on the infestation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Bora-Care toxic to humans or dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should always wear gloves and eye protection when applying this termiticide. However, you don’t need to wear a respirator unless the application is in an enclosed space. Once dry, this product is completely safe for children and pets."
+      }
+    }
+  ]
+}
+```
+
+Replace the content and paste it in the following section of the metafield app:
+
+Navigate to Metafield app through this <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/app/39776">link</a>.
+
+![product-faq-metafield-main.png](img/product-faq-metafield-main.png)
+
+Select the product from the list as marked below:
+
+![product-faq-metafield-list.png](img/product-faq-metafield-list.png)
+
+Replace or edit the part of the HTML in below section:
+
+![product-faq-metafield-list-html.png](img/product-faq-metafield-list-html.png)
+
+Replace or edit the part of the Schema in below section and save the changes:
+
+![product-faq-metafield-list-schema-save.png](img/product-faq-metafield-list-schema-save.png)
 
 ## Related Items or You May Also Like
 

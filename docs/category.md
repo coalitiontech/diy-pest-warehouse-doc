@@ -119,11 +119,72 @@ Copy the following snippet:
 </div>
 ```
 
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best products to treat a flea infestation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To address a flea problem effectively, you can use a combination of sprays, powders, foggers, and insect growth regulators (IGRs). Sprays and foggers target adult pests instantly, while IGRs work by halting the development of eggs and larvae. Powders are particularly useful in crevices and under furniture. Treating multiple surfaces like carpets, pet bedding, and upholstery ensures that fleas are eliminated from every stage of their life cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What’s the difference between flea sprays, powders, and foggers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each flea killer option has its strengths depending on the infestation. Indoor flea sprays are adaptable and work well on soft furnishings and other surfaces. Powders are better suited for getting into cracks or deep layers of carpets. Foggers, on the other hand, disperse treatments throughout an entire room, even reaching difficult-to-access areas. A combination of these methods can give you the most thorough results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use flea sprays on furniture, carpets, and bedding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most sprays are formulated for luxe on household fabrics, but checking the product label is crucial. Many are designed to kill pests hiding in upholstery, rugs, and linens while being safe for these surfaces. Be sure to apply these types of flea killers as instructed and allow the areas to dry before making contact. Following the proper guidelines ensures both safety and effectiveness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take for flea treatments to work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The time frame varies with each pest control product for fleas. Some sprays and foggers act immediately on adult fleas, but eradicating eggs and larvae may require days or weeks. Using complementary products, such as IGRs or flea insecticides, can accelerate this process by disrupting their growth cycle. Consistency in treatment and cleaning is key for long-term success."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I apply flea treatments to my home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a severe infestation, treating the space every two weeks is effective until all activity has stopped. Afterward, applying flea killer treatments every six to eight weeks helps maintain a pest-free home. In addition to these steps, regular cleaning of items like bedding and rugs can further prevent re-infestation."
+      }
+    }
+  ]
+}
+```
+
 Replace the content and paste it in the following section of the metafield app:
 
-Pending
+Navigate to Metafield app through this <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/app/39776">link</a>.
 
-<!-- ![category-faq-metafield.png](img/category-faq-metafield.png) -->
+![category-faq-metafield-main.png](img/category-faq-metafield-main.png)
+
+Select the category from category dropdown as marked below:
+
+![category-faq-metafield-list.png](img/category-faq-metafield-list.png)
+
+Replace or edit the part of the HTML in below section:
+
+![category-faq-metafield-list-html.png](img/category-faq-metafield-list-html.png)
+
+Replace or edit the part of the Schema in below section and save the changes:
+
+![category-faq-metafield-list-schema-save.png](img/category-faq-metafield-list-schema-save.png)
 
 ## Copy
 ![category-copy.png](img/category-copy.png)
