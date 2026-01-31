@@ -59,7 +59,9 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Product</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#short-description">Short Description</a>
+    <li class="toctree-l2"><a class="reference internal" href="#descriptiontab-structure">Description/Tab structure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shorttop-description">Short/Top Description</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#custom-product-tabs">Custom Product tabs</a>
         <ul>
@@ -68,6 +70,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#product-data-sheet-tab">Product Data Sheet Tab</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#product-specific-table-tab">Product Specific Table Tab</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more-info">More info</a>
     </li>
         </ul>
     </li>
@@ -115,11 +119,26 @@
               
                 <h1 id="product-page">Product Page</h1>
 <p>The product page displays the information about the product. It includes the product name, description, price, options, and an image of the product.</p>
-<p>Most of the product page is built with the default BigCommerce settings, for more information regarding how to add a product in Bigcommerce with the V2 settings, refer to this <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US" target="_blank">documentation</a>. </p>
+<p>Most of the product page is built with the default BigCommerce settings, for more information regarding how to add a product in Bigcommerce with the V2 settings, refer to this <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US" target="_blank">documentation</a>.</p>
+<h2 id="descriptiontab-structure">Description/Tab structure</h2>
 <p>There are some parts on the product page that need to follow specific guidelines.</p>
-<h2 id="short-description">Short Description</h2>
+<p>Note: If <code>&lt;!-- split --&gt;</code> is not there then you can add them.</p>
+<p>Top description:</p>
+<p><img alt="pdp-top-description-bc.png" src="../img/pdp-top-description-bc.png" /></p>
+<p>Overview Tab:</p>
+<p><img alt="pdp-overview-tab-bc.png" src="../img/pdp-overview-tab-bc.png" /></p>
+<p>Product Specifications Table Tab:</p>
+<p><img alt="pdp-specs-tab-bc.png" src="../img/pdp-specs-tab-bc.png" /></p>
+<h2 id="shorttop-description">Short/Top Description</h2>
+<p><img alt="pdp-top-description.png" src="../img/pdp-top-description.png" /></p>
 <p>The short description is a brief description of the product. It should be a short paragraph that describes the product in a few sentences. The short description should be displayed at the top of the product page.
 It is not mandatory, so not all the products will have it.</p>
+<p>Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products">product section</a> on the bigcommerce dashboard, and select the product to edit:</p>
+<p><img alt="pdp-custom-tab-bc-view.png" src="../img/pdp-custom-tab-bc-view.png" /></p>
+<p>Click the Description tab in product page:</p>
+<p><img alt="pdp-custom-tab-bc-description-tab.png" src="../img/pdp-custom-tab-bc-description-tab.png" /></p>
+<p><img alt="pdp-custom-tab-specific-table-bc.png" src="../img/pdp-custom-tab-specific-table-bc.png" /></p>
+<p>Please refer to top description <a href="/product/#descriptiontab-structure">here.</a></p>
 <h2 id="custom-product-tabs">Custom Product tabs</h2>
 <p><img alt="pdp-custom-tab.png" src="../img/pdp-custom-tab.png" /></p>
 <h3 id="overview-tab">Overview Tab</h3>
@@ -128,11 +147,22 @@ It is not mandatory, so not all the products will have it.</p>
 <p><img alt="pdp-custom-tab-bc-view.png" src="../img/pdp-custom-tab-bc-view.png" /></p>
 <p>Click the Description tab in product page:</p>
 <p><img alt="pdp-custom-tab-bc-description-tab.png" src="../img/pdp-custom-tab-bc-description-tab.png" /></p>
-<p>Content added on the following section will be displayed under Overview tab:</p>
-<p><img alt="pdp-custom-tab-bc-description.png" src="../img/pdp-custom-tab-bc-description.png" /></p>
+<p><img alt="pdp-custom-tab-specific-table-bc.png" src="../img/pdp-custom-tab-specific-table-bc.png" /></p>
+<p>Please refer to Overview tab <a href="/product/#descriptiontab-structure">here.</a></p>
 <h3 id="product-data-sheet-tab">Product Data Sheet Tab</h3>
 <p><img alt="pdp-custom-tab-data-sheet.png" src="../img/pdp-custom-tab-data-sheet.png" /></p>
-<p>Coming soon...</p>
+<p>Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products">product section</a> on the bigcommerce dashboard, and select the product to edit:</p>
+<p><img alt="pdp-custom-tab-bc-view.png" src="../img/pdp-custom-tab-bc-view.png" /></p>
+<p>Click the custom field link to scroll to the Product custom field section:</p>
+<p><img alt="pdp-custom-tab-data-sheet-bc.png" src="../img/pdp-custom-tab-data-sheet-bc.png" /></p>
+<p>To add PDF, please use following structure:</p>
+<p>PDF 1 IMAGE
+<br>
+PDF 1 LINK</p>
+<p>PDF 2 IMAGE
+<br>
+PDF 2 LINK</p>
+<p>and so on, we support 12 PDF, so you can keep iterating the number up to 12.</p>
 <h3 id="product-specific-table-tab">Product Specific Table Tab</h3>
 <p><img alt="pdp-custom-tab-specific-table.png" src="../img/pdp-custom-tab-specific-table.png" /></p>
 <p>Copy the following code snippet and replace the content between the start and end tag:</p>
@@ -177,8 +207,17 @@ It is not mandatory, so not all the products will have it.</p>
 <p><img alt="pdp-custom-tab-specific-table-bc.png" src="../img/pdp-custom-tab-specific-table-bc.png" /></p>
 <p>Navigate back to the description tab as previously did on <a href="#overview-tab">Overview tab</a>, </p>
 <p><img alt="pdp-custom-tab-specific-table-bc-paste.png" src="../img/pdp-custom-tab-specific-table-bc-paste.png" /></p>
-<p>Paste the code right after the description added for the overview tab. If there is no content paste it directly in the empty space.</p>
+<p>Paste the code right after the description added for the overview tab. If there is no content paste it directly in the empty space, make sure the <code>&lt;!-- split --&gt;</code> is there, please refer Product Specifications Table Tab <a href="/product/#descriptiontab-structure">here.</a></p>
 <p>Click Ok and Save to publish.</p>
+<h3 id="more-info">More info</h3>
+<p><img alt="pdp-custom-tab-more-info.png" src="../img/pdp-custom-tab-more-info.png" /></p>
+<p>Navigate to Metafield app through this <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/app/39776">link</a>.</p>
+<p><img alt="product-faq-metafield-main.png" src="../img/product-faq-metafield-main.png" /></p>
+<p>Select the product from the list as marked below:</p>
+<p><img alt="product-faq-metafield-list.png" src="../img/product-faq-metafield-list.png" /></p>
+<p>Add content on Product - Bottom Description to display under More Info:</p>
+<p><img alt="pdp-custom-tab-more-info-bc.png" src="../img/pdp-custom-tab-more-info-bc.png" /></p>
+<p>Click save changes to publish.</p>
 <h2 id="faq">FAQ</h2>
 <p><img alt="pdp-faq.png" src="../img/pdp-faq.png" /></p>
 <p>Copy the following snippet:</p>

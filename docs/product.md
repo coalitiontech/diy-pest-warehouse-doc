@@ -1,15 +1,43 @@
 # Product Page
 The product page displays the information about the product. It includes the product name, description, price, options, and an image of the product.
 
-Most of the product page is built with the default BigCommerce settings, for more information regarding how to add a product in Bigcommerce with the V2 settings, refer to this <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US" target="_blank">documentation</a>. 
+Most of the product page is built with the default BigCommerce settings, for more information regarding how to add a product in Bigcommerce with the V2 settings, refer to this <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US" target="_blank">documentation</a>.
+
+## Description/Tab structure
 
 There are some parts on the product page that need to follow specific guidelines.
 
-## Short Description
+Note: If `<!-- split -->` is not there then you can add them.
 
+Top description:
+
+![pdp-top-description-bc.png](img/pdp-top-description-bc.png)
+
+Overview Tab:
+
+![pdp-overview-tab-bc.png](img/pdp-overview-tab-bc.png)
+
+Product Specifications Table Tab:
+
+![pdp-specs-tab-bc.png](img/pdp-specs-tab-bc.png)
+
+## Short/Top Description
+![pdp-top-description.png](img/pdp-top-description.png)
 
 The short description is a brief description of the product. It should be a short paragraph that describes the product in a few sentences. The short description should be displayed at the top of the product page.
 It is not mandatory, so not all the products will have it.
+
+Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products">product section</a> on the bigcommerce dashboard, and select the product to edit:
+
+![pdp-custom-tab-bc-view.png](img/pdp-custom-tab-bc-view.png)
+
+Click the Description tab in product page:
+
+![pdp-custom-tab-bc-description-tab.png](img/pdp-custom-tab-bc-description-tab.png)
+
+![pdp-custom-tab-specific-table-bc.png](img/pdp-custom-tab-specific-table-bc.png)
+
+Please refer to top description <a href="/product/#descriptiontab-structure">here.</a>
 
 ## Custom Product tabs
 ![pdp-custom-tab.png](img/pdp-custom-tab.png)
@@ -25,15 +53,33 @@ Click the Description tab in product page:
 
 ![pdp-custom-tab-bc-description-tab.png](img/pdp-custom-tab-bc-description-tab.png)
 
-Content added on the following section will be displayed under Overview tab:
+![pdp-custom-tab-specific-table-bc.png](img/pdp-custom-tab-specific-table-bc.png)
 
-![pdp-custom-tab-bc-description.png](img/pdp-custom-tab-bc-description.png)
+Please refer to Overview tab <a href="/product/#descriptiontab-structure">here.</a>
 
 ### Product Data Sheet Tab
 
 ![pdp-custom-tab-data-sheet.png](img/pdp-custom-tab-data-sheet.png)
 
-Coming soon...
+Navigate to <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/products">product section</a> on the bigcommerce dashboard, and select the product to edit:
+
+![pdp-custom-tab-bc-view.png](img/pdp-custom-tab-bc-view.png)
+
+Click the custom field link to scroll to the Product custom field section:
+
+![pdp-custom-tab-data-sheet-bc.png](img/pdp-custom-tab-data-sheet-bc.png)
+
+To add PDF, please use following structure:
+
+PDF 1 IMAGE
+<br>
+PDF 1 LINK
+
+PDF 2 IMAGE
+<br>
+PDF 2 LINK
+
+and so on, we support 12 PDF, so you can keep iterating the number up to 12.
 
 ### Product Specific Table Tab
 
@@ -87,9 +133,27 @@ Navigate back to the description tab as previously did on <a href="#overview-tab
 
 ![pdp-custom-tab-specific-table-bc-paste.png](img/pdp-custom-tab-specific-table-bc-paste.png)
 
-Paste the code right after the description added for the overview tab. If there is no content paste it directly in the empty space.
+Paste the code right after the description added for the overview tab. If there is no content paste it directly in the empty space, make sure the `<!-- split -->` is there, please refer Product Specifications Table Tab <a href="/product/#descriptiontab-structure">here.</a>
 
 Click Ok and Save to publish.
+
+### More info
+
+![pdp-custom-tab-more-info.png](img/pdp-custom-tab-more-info.png)
+
+Navigate to Metafield app through this <a href="https://store-lr0iyiahf7.mybigcommerce.com/manage/app/39776">link</a>.
+
+![product-faq-metafield-main.png](img/product-faq-metafield-main.png)
+
+Select the product from the list as marked below:
+
+![product-faq-metafield-list.png](img/product-faq-metafield-list.png)
+
+Add content on Product - Bottom Description to display under More Info:
+
+![pdp-custom-tab-more-info-bc.png](img/pdp-custom-tab-more-info-bc.png)
+
+Click save changes to publish.
 
 ## FAQ
 ![pdp-faq.png](img/pdp-faq.png)
