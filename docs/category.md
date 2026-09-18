@@ -63,6 +63,8 @@ It lists all the products in the category.
 Copy the following snippet:
 
 ```html
+<h2 style="text-align:center;">Frequently Asked Questions</h2>
+
 <div class="custom-accordion">
     <h3>How do I know if I have a bed bug infestation?</h3>
 </div>
